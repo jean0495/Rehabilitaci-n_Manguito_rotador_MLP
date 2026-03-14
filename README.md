@@ -1,2 +1,2 @@
-# Rehabilitaci-n_Manguito_rotador_MLP
+# MLP_para_rehabilitacion_del_manguito_rotador
 .....
