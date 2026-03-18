@@ -10,4 +10,5 @@ public:
 
 private:
     bool _gestoValido(uint8_t classId);
+    uint8_t _ultimaClase = 255;  // 255 = valor imposible, fuerza primer movimiento
 };

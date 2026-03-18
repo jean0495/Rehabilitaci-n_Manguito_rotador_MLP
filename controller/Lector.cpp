@@ -10,8 +10,8 @@ bool LectorSerial::hayDatos() {
 }
 
 uint8_t LectorSerial::leer() {
-    uint8_t classId = (uint8_t)Serial.parseInt();
-    Serial.print("[OK] classId recibido: ");
-    Serial.println(classId);
-    return classId;
+    String linea = Serial.readStringUntil('\n');
+    linea.trim();
+    if (linea.length() == 0) return 255;  // valor inválido
+    return (uint8_t)linea.toInt();
 }

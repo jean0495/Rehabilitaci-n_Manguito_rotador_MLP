@@ -16,10 +16,10 @@ static const uint8_t NUM_SERVOS = 5;
 
 static const uint8_t TABLA_GESTOS[NUM_GESTOS][NUM_SERVOS] = {
 //   S0   S1   S2   S3   S4
-  {   0,   0,   0,   0,   0 },  // REPOSO
-  {  90,   0,   0,   0,   0 },  // GESTO_1
-  {  90,  90,   0,   0,   0 },  // GESTO_2
-  {  90,  90,  90,   0,   0 },  // GESTO_3
-  {  90,  90,  90,  90,   0 },  // GESTO_4
-  {  90,  90,  90,  90,  90 },  // GESTO_5
+  {   150,   150,   150,   150,   0 },  // REPOSO
+  {  150,   150,   0,   0,  150},  // GESTO_1
+  {  150,  0,   0,   0,   150 },  // GESTO_2
+  {  0,  0,  0,   0,   150 },  // GESTO_3
+  {  0,  0,  0,  0,   0 },  // REPOSO
+  {  150,  150,  150,  150,  150 },  // GESTO_5
 };
